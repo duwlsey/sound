@@ -1,0 +1,9 @@
+{
+  "note": "Thumbnail endpoint forces the requested dimensions. Always derive both dimensions from the actual original image, not from the website's fixed preview canvas. CSS object-fit cannot repair an already distorted bitmap.",
+  "verified_originals": {
+    "janggu": { "width": 7968, "height": 8222, "display_width": 1000, "display_height": 1032 },
+    "jing": { "width": 8184, "height": 8000, "display_width": 1000, "display_height": 978 },
+    "taepyeongso": { "width": 6538, "height": 8360, "display_width": 1000, "display_height": 1279 },
+    "kkwaenggwari": { "width": 8360, "height": 5579, "display_width": 1200, "display_height": 800 }
+  }
+}

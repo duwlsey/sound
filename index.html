@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c4052">
+  <meta name="description" content="꽹과리, 장구, 북, 징, 소고, 태평소. 여섯 국악기의 소리와 연주를 듣고 나만의 느낌을 발견해 보세요.">
+  <title>국악기 소리 탐색</title>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="app.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header">
+    <button class="brand" data-home aria-label="국악기 소리 탐색 처음으로">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>국악기 소리 탐색</span>
+    </button>
+    <span class="header-caption">우리 악기를 만나는 시간</span>
+    <button class="back-button" data-home hidden><span aria-hidden="true">←</span> 처음으로</button>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="intro page" id="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow">우리 악기, 여섯 가지 소리</p>
+        <h1 id="intro-title">국악기 소리 탐색</h1>
+        <p class="instruction">악기의 소리를 잘 듣고 악기의 특징이나 음색을 자세히 적어봅시다.</p>
+        <button class="start-button" id="start">탐색 시작하기 <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="intro-gallery" aria-label="탐색할 여섯 가지 국악기">
+        <div class="mini-grid" id="mini-grid"></div>
+      </div>
+    </section>
+    <section class="explore page" id="explore" aria-labelledby="explore-title" hidden>
+      <div class="explore-heading">
+        <div><p class="eyebrow">가만히, 귀 기울여 보세요</p><h1 id="explore-title" tabindex="-1">어떤 소리가 들리나요?</h1><p class="expression-tip">소리가 높은지 낮은지, 짧게 끊기는지 길게 울리는지 귀 기울여 보세요.<br>‘맑다’, ‘거칠다’, ‘묵직하다’처럼 느낀 음색과 떠오르는 모습을 자기 말로 적어 보세요.</p></div>
+        <p class="listening-tip"><span aria-hidden="true">◉</span> 버튼을 다시 누르거나 빈 곳을 누르면 소리가 멈춰요.</p>
+      </div>
+      <div class="instrument-grid" id="instrument-grid"></div>
+      <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+      <p id="error-message" class="error-message" role="alert" hidden></p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>듣고, 느끼고, 나만의 말로 표현해요.</span><button id="show-credits">사진·음원 출처 <span aria-hidden="true">↗</span></button></footer>
+  <dialog id="credits" aria-labelledby="credits-title">
+    <div class="dialog-heading"><h2 id="credits-title">사진·음원 출처</h2><button id="close-credits" aria-label="출처 창 닫기">×</button></div>
+    <div class="credits-content">
+      <h3>악기 사진</h3>
+      <p>꽹과리·장구·북·징·태평소: 국립국악원 사진자료실 「한국의 악기」. 공공누리 제1유형(출처표시).</p>
+      <ul><li><a href="https://www.gugak.go.kr/site/program/board/basicboard/view?boardtypeid=110&menuid=001003007001&boardid=45581" target="_blank" rel="noopener">꽹과리</a></li><li><a href="https://www.gugak.go.kr/site/program/board/basicboard/view?boardtypeid=110&menuid=001003007001&boardid=45607" target="_blank" rel="noopener">장구</a></li><li><a href="https://www.gugak.go.kr/site/program/board/basicboard/view?boardtypeid=110&menuid=001003007001&boardid=45806" target="_blank" rel="noopener">북</a></li><li><a href="https://www.gugak.go.kr/site/program/board/basicboard/view?boardtypeid=110&menuid=001003007001&boardid=45612" target="_blank" rel="noopener">징</a></li><li><a href="https://www.gugak.go.kr/site/program/board/basicboard/view?boardtypeid=110&menuid=001003007001&boardid=45614" target="_blank" rel="noopener">태평소</a></li></ul>
+      <p>소고: 국립국악원 국악사전 <a href="https://www.gugak.go.kr/ency/topic/view/%EC%86%8C%EA%B3%A0" target="_blank" rel="noopener">「소고」의 소고(벅구) 사진</a>, 국립국악원 국악박물관. 공공누리 제4유형(출처표시·상업적 이용금지·변경금지). 원본 사진을 자르거나 변형하지 않고 표시했습니다.</p>
+      <h3>악기 소리와 연주</h3>
+      <p>꽹과리·장구·북·징·태평소: <a href="https://api.gugak.go.kr/digitaleum/front/monotone/list.do" target="_blank" rel="noopener">국립국악원 국악기 디지털 음원</a>. 공공누리 제1유형. 구간 추출, 음량 조절, 페이드 및 형식 변환.</p>
+      <p>소고: <a href="https://freesound.org/people/ultradust/sounds/167382/" target="_blank" rel="noopener">Korean Sogo Drum (jajinmori jangdan-style)</a> by ultradust / Freesound, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. 공개 MP3 미리듣기 사용. 구간 추출, 음량 조절 및 페이드. 제작자는 정확한 자진모리 장단이 아니라고 명시했습니다. ‘소고 리듬 예시’로 감상해 주세요.</p>
+      <p class="credits-note">이 앱은 비상업용 교육 활동을 위해 제작되었습니다. 자세한 음원 정보는 <a href="assets/audio-sources.json" target="_blank" rel="noopener">파일별 출처</a>에서 확인할 수 있습니다.</p>
+    </div>
+  </dialog>
+</body>
+</html>
